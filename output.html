@@ -1,0 +1,306 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">3.3 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">0.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Test with high-intensity athlete (Olympic weightlifter) requiring extremely high protein and caloric intake</td>
+                <td class="prompt-inputs"><strong>height:</strong> 185<br><strong>weight:</strong> 110<br><strong>goal:</strong> Maximize muscle recovery and performance for Olympic weightlifting competition<br><strong>restriction:</strong> High protein, gluten-free diet</td>
+                <td class="criteria">• Provide minimum 4000 calories daily<br>• Ensure protein intake of at least 2.2g per kg of body weight<br>• Include balanced macronutrient distribution for high-intensity training<br>• Accommodate gluten-free dietary restriction</td>
+                <td class="output"><pre>Based on the provided information, here's a recommended diet plan for an Olympic weightlifter with these specifications:
+
+Nutritional Approach:
+1. Protein Intake
+- Target: 1.6-2.2g of protein per kg of body weight
+- Approximately 160-240g of protein daily
+- Sources: Lean meats, fish, eggs, gluten-free protein powders (whey isolate, beef protein)
+
+2. Carbohydrates
+- Focus on complex, gluten-free carbs
+- Sources: 
+  - Sweet potatoes
+  - Rice (white/brown)
+  - Quinoa
+  - Gluten-free oats
+- Timing: Emphasize carbs around training sessions
+
+3. Fats
+- Healthy fats for hormone production and recovery
+- Sources:
+  - Avocados
+  - Nuts (almonds, walnuts)
+  - Olive oil
+  - Fatty fish
+
+4. Meal Timing
+- Pre-workout: Easily digestible protein and carbs
+- Post-workout: High protein, moderate carbs for recovery
+- 5-6 smaller meals throughout the day
+
+5. Supplements
+- Creatine monohydrate
+- Glutamine
+- Omega-3 fish oils
+- Vitamin D
+- Electrolyte supplements
+
+Hydration: 3-4 liters of water daily</pre></td>
+                <td class="score-col"><span class="score score-low">3</span></td>
+                <td class="reasoning">While the solution provides a solid nutritional framework, it fails to meet the mandatory requirements of specifying daily caloric intake, exact meal compositions, and precise macronutrient percentages. The approach is sound, but lacks the specific implementation details required for a complete meal plan.</td>
+            </tr>
+        
+            <tr>
+                <td>Test with vegan endurance athlete (marathon runner) with plant-based nutritional constraints</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 68<br><strong>goal:</strong> Marathon training nutrition optimization<br><strong>restriction:</strong> Vegan diet</td>
+                <td class="criteria">• Provides balanced daily caloric intake matching athlete's requirements<br>• Ensures complete plant-based protein coverage for endurance training<br>• Includes adequate complex carbohydrates for sustained energy<br>• Incorporates essential micronutrients typical in vegan athlete diets</td>
+                <td class="output"><pre>Based on the provided information for a vegan marathon training nutrition plan, here's a recommended diet:
+
+Macronutrient Breakdown:
+- Carbohydrates: 55-65% of total calories
+- Protein: 15-20% of total calories
+- Healthy Fats: 20-25% of total calories
+
+Daily Calorie Intake:
+- Estimated around 2,600-2,800 calories (depending on training intensity)
+
+Key Nutrition Recommendations:
+1. Protein Sources:
+- Tofu
+- Tempeh
+- Seitan
+- Legumes (beans, lentils)
+- Quinoa
+- Plant-based protein powders
+- Nuts and seeds
+
+2. Complex Carbohydrates:
+- Whole grains
+- Sweet potatoes
+- Brown rice
+- Oats
+- Quinoa
+- Fruits
+
+3. Healthy Fats:
+- Avocados
+- Nuts (almonds, walnuts)
+- Chia seeds
+- Flaxseeds
+- Olive oil
+
+4. Key Supplements:
+- Vitamin B12
+- Iron
+- Omega-3 (algae-based)
+- Vitamin D
+- Zinc
+
+Meal Timing:
+- Pre-run: Easily digestible carbs
+- Post-run: Protein and carb recovery meal
+- Hydration: 2-3 liters of water daily
+
+Consultation with a sports nutritionist is recommended for personalized advice.</pre></td>
+                <td class="score-col"><span class="score score-low">3</span></td>
+                <td class="reasoning">While the solution provides excellent nutritional guidance for a vegan marathon runner, it fails to meet the mandatory requirements of presenting a specific daily meal plan with exact food portions and timing. The nutritional framework is strong, but the implementation details are missing, which prevents full compliance with the task description.</td>
+            </tr>
+        
+            <tr>
+                <td>Test with budget-conscious collegiate athlete with limited cooking skills and minimal preparation time</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 82<br><strong>goal:</strong> muscle maintenance during intense training<br><strong>restriction:</strong> limited cooking time and budget</td>
+                <td class="criteria">• Provide 3-4 affordable, quick-to-prepare meals<br>• Meet daily caloric and protein requirements for athlete<br>• Include minimal cooking complexity<br>• Balance nutritional needs within budget constraints</td>
+                <td class="output"><pre>Based on the given information, here's a recommended diet plan for muscle maintenance during intense training, considering limited cooking time and budget:
+
+Macronutrient Breakdown:
+- Protein: 180-200g per day (1.8-2.2g per kg of body weight)
+- Carbs: 250-300g per day
+- Healthy Fats: 60-80g per day
+
+Quick and Budget-Friendly Meal Plan:
+
+Breakfast:
+- Overnight oats with protein powder
+- Greek yogurt
+- Frozen berries
+- Peanut butter
+
+Mid-Morning Snack:
+- Protein shake
+- Banana
+- Handful of almonds
+
+Lunch:
+- Canned tuna or rotisserie chicken
+- Microwaveable brown rice
+- Frozen mixed vegetables
+
+Afternoon Snack:
+- Protein bar
+- Apple
+- Hard-boiled eggs
+
+Dinner:
+- Rotisserie chicken or pre-cooked salmon
+- Instant/microwaveable quinoa
+- Canned or frozen vegetables
+
+Before Bed:
+- Cottage cheese
+- Casein protein shake
+
+Supplement Recommendations:
+- Whey protein
+- Multivitamin
+- Creatine
+- Omega-3 supplements
+
+Tips:
+- Meal prep on weekends
+- Buy in bulk
+- Use frozen/canned options
+- Focus on convenience and nutrition</pre></td>
+                <td class="score-col"><span class="score score-low">4</span></td>
+                <td class="reasoning">The solution partially meets mandatory requirements but fails to provide a complete nutritional profile. While the meal plan offers practical suggestions for an athlete with limited time and budget, it does not explicitly calculate total daily calories or provide exact portion measurements. The macronutrient breakdown is present, but without precise quantities, the plan lacks the specificity required for an athlete's precise nutritional needs.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
