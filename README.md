@@ -1,13 +1,11 @@
 # Claude API Experiments
 
-A collection of Jupyter notebooks for experimenting with the Anthropic Claude API, focusing on prompt evaluation and testing various tasks.
+Advanced prompt evaluation framework using the Anthropic Claude API for automated test case generation and evaluation.
 
 ## Project Structure
 
-- `001_prompt_evals.ipynb` - Automated prompt evaluation system with syntax validation (AWS-focused)
 - `001_prompting.ipynb` - Advanced prompt evaluation framework with automated test case generation
-- `001_requests.ipynb` - Basic Claude API request examples
-- `dataset.json` - Generated test dataset (currently nutrition/meal planning tasks)
+- `dataset.json` - Generated test dataset for prompt evaluation (nutrition/meal planning tasks)
 
 ## Features
 
@@ -51,21 +49,6 @@ Flow Details:
 - **Concurrent Processing**: Parallel test case generation and evaluation
 - **Structured Evaluation**: Solution criteria matching for accurate scoring
 - **Rich Reporting**: HTML reports with visual scoring and detailed feedback
-
-### Basic Prompt Evaluation System (`001_prompt_evals.ipynb`)
-
-The original evaluation system for code generation tasks:
-
-- **Automated Dataset Generation**: Creates test cases for Python, JSON, and regex tasks
-- **Dual Scoring System**: Combines model-based evaluation with syntax validation
-- **Format Validation**: Checks if outputs are valid Python, JSON, or regex patterns
-- **AWS-Focused Tasks**: Generates tasks related to AWS services and resources
-
-### Evaluation Components
-
-1. **Model Grading**: Uses Claude to evaluate solution quality with structured feedback
-2. **Syntax Validation**: Programmatically validates code syntax and JSON structure
-3. **Combined Scoring**: Averages model scores with syntax validation scores
 
 ## Setup
 
@@ -119,30 +102,16 @@ The original evaluation system for code generation tasks:
 
 4. **View results in HTML report** with scores, feedback, and detailed analysis
 
-### Using Basic Evaluation (`001_prompt_evals.ipynb`)
-
-Open `001_prompt_evals.ipynb` and run the cells to:
-
-1. Generate a new test dataset
-2. Run prompts against the dataset
-3. Evaluate outputs with both model and syntax scoring
-4. View aggregated results and scores
-
 ### Adding New Test Cases
 
 You can modify the dataset generation prompt to create different types of evaluation tasks, or manually edit `dataset.json` to add specific test cases.
 
 ## Example Output
 
-**Advanced Framework** generates tasks like:
+The framework generates diverse test scenarios like:
 - High-intensity athlete nutrition (Olympic weightlifter)
 - Endurance athlete meal planning (marathon runner)
 - Budget-conscious student athlete meals
-
-**Basic System** generates tasks like:
-- Creating Python functions for AWS resource manipulation
-- Writing JSON policies and configurations
-- Developing regex patterns for AWS resource validation
 
 Each task is evaluated comprehensively with detailed scoring and feedback.
 
