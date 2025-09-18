@@ -137,165 +137,173 @@
             <tbody>
     
             <tr>
-                <td>{'id': 1, 'name': 'Vận động viên leo núi cực đoan', 'description': 'Test khả năng tạo kế hoạch cho vận động viên leo núi với yêu cầu dinh dưỡng đặc biệt', 'input_scenario': {'height': '180', 'weight': '75', 'goal': 'Tăng sức bền và khối lượng cơ', 'restriction': 'Không ăn thịt, chỉ ăn thực vật'}, 'focus_points': ['Đánh giá cân bằng dinh dưỡng protein thực vật', 'Tính toán năng lượng phù hợp với hoạt động cường độ cao', 'Đảm bảo bữa ăn linh hoạt với hạn chế chế độ ăn']}</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 75<br><strong>goal:</strong> Tăng sức bền và khối lượng cơ<br><strong>restriction:</strong> Không ăn thịt, chỉ ăn thực vật</td>
-                <td class="criteria">• Cung cấp tổng năng lượng phù hợp với hoạt động leo núi cường độ cao (khoảng 3500-4000 kcal)<br>• Đảm bảo nguồn protein thực vật đầy đủ (đậu, quinoa, hạt, protein thực vật)<br>• Cân bằng carbohydrate phức hợp để duy trì năng lượng ổn định<br>• Bổ sung omega-3 và các chất chống oxy hóa từ thực vật<br>• Thiết kế bữa ăn linh hoạt, dễ chuẩn bị cho vận động viên leo núi<br>• Đáp ứng 100% nhu cầu protein (khoảng 1.6-2g/kg trọng cơ thể)</td>
-                <td class="output"><pre>Dựa trên thông tin bạn cung cấp, tôi sẽ đề xuất một kế hoạch dinh dưỡng cho người ăn thuần chay với mục tiêu tăng sức bền và khối lượng cơ:
+                <td>{'id': 1, 'name': 'Vận động viên Bodybuilding cực đoan', 'description': 'Test khả năng xử lý kế hoạch ăn uống cho vận động viên bodybuilding với mục tiêu tăng cơ cực đoan và yêu cầu hạn chế không gluten, không lactose', 'testInput': {'height': '185', 'weight': '90', 'goal': 'Tăng khối cơ nhanh chóng', 'restriction': 'Không gluten, không lactose'}, 'challengeAspects': ['Cân bằng dinh dưỡng cao protein', 'Đáp ứng các hạn chế chế độ ăn', 'Tính toán năng lượng chính xác']}</td>
+                <td class="prompt-inputs"><strong>height:</strong> 185<br><strong>weight:</strong> 90<br><strong>goal:</strong> Tăng khối cơ nhanh chóng<br><strong>restriction:</strong> Không gluten, không lactose</td>
+                <td class="criteria">• Tổng lượng protein đạt tối thiểu 2.2g/kg trọng cơ thể<br>• Cung cấp năng lượng từ 3500-4000 calo/ngày<br>• 100% loại bỏ thành phần chứa gluten và lactose<br>• Đảm bảo tỷ lệ protein/carbs/chất béo phù hợp với mục tiêu tăng cơ<br>• Sử dụng các nguồn protein thay thế như thịt gà, cá, trứng, protein thực vật<br>• Bổ sung các loại thực phẩm giàu năng lượng không chứa gluten như gạo, khoai lang<br>• Cung cấp đủ vi chất dinh dưỡng hỗ trợ phát triển cơ bắp</td>
+                <td class="output"><pre>Dựa trên thông tin bạn cung cấp, tôi sẽ đề xuất một kế hoạch dinh dưỡng phù hợp để hỗ trợ tăng khối cơ, đồng thời tránh gluten và lactose:
 
-SÁNG SANG:
-- Bát yến mạch nấu với sữa đậu nành
-- 1 muỗng protein đậu phộng
+SÁNG (Bữa 1 - 7h):
+- 4 trứng gà (bỏ lòng đỏ)
+- 100g thịt gà nướng
+- 1 bát yến mạch không gluten
 - 1 quả chuối
-- 1 nắm hạt hạnh nhân
+- Nước cam tươi
 
-Protein: 30g
-Carbs: 60g
-Chất béo: 20g
-
-GIỮA BUỔI SÁNG:
-- Sinh tố protein (protein đậu nành, chuối, bơ)
-- 1 nắm hạt điều
-
-TRƯA:
-- Đậu lăng nấu với gạo lứt
-- Rau xanh hỗn hợp
-- Đậu phụ áp chảo
-- Nước sốt tahini
-
-Protein: 40g
-Carbs: 70g
-Chất béo: 25g
-
-XẾP CHIỀU:
-- Smoothie protein
-- Bánh mì đen
-- Hummus
-
-TỐI:
-- Đậu đen nấu với quinoa
-- Rau xanh
-- Tempeh nướng
-- Sốt cà chua
-
-Protein: 50g
-Carbs: 60g
-Chất béo: 30g
-
-TỔNG NGÀY:
-- Protein: 120-140g
-- Carbs: 190g
-- Chất béo: 75g
-- Tổng năng lượng: 2500-2700 Kcal
-
-LƯU Ý:
-- Bổ sung B12
-- Uống nhiều nước
-- Bổ sung Creatine
-- Chọn protein thực vật có chất lượng cao
-
-Chúc bạn thành công!</pre></td>
-                <td class="score-col"><span class="score score-medium">6</span></td>
-                <td class="reasoning">Giải pháp có nền tảng tốt nhưng chưa đáp ứng đầy đủ nhu cầu năng lượng và protein cho vận động viên leo núi. Cần điều chỉnh khẩu phần và bổ sung thêm các nguồn dinh dưỡng.</td>
-            </tr>
-        
-            <tr>
-                <td>{'id': 2, 'name': 'Vận động viên chạy marathon siêu nhẹ', 'description': 'Test kế hoạch dinh dưỡng cho vận động viên marathon với mục tiêu giảm cân', 'input_scenario': {'height': '165', 'weight': '90', 'goal': 'Giảm cân và tăng tốc độ chạy', 'restriction': 'Không đường, ít carbs'}, 'focus_points': ['Thiết kế chế độ ăn năng lượng thấp', 'Cân bằng dinh dưỡng để duy trì hiệu suất', 'Hỗ trợ quá trình giảm cân an toàn']}</td>
-                <td class="prompt-inputs"><strong>height:</strong> 165<br><strong>weight:</strong> 90<br><strong>goal:</strong> Giảm cân và tăng tốc độ chạy marathon<br><strong>restriction:</strong> Không đường, ít carbs</td>
-                <td class="criteria">• Cung cấp kế hoạch bữa ăn dưới 2000 kcal/ngày<br>• Tỷ lệ protein từ 25-30% tổng năng lượng<br>• Ưu tiên protein nạc và rau xanh<br>• Đảm bảo cung cấp năng lượng cho hoạt động marathon<br>• Hỗ trợ giảm cân từ 0.5-1kg/tuần<br>• Không sử dụng đường và tinh bột tinh chế<br>• Cung cấp đủ vi chất dinh dưỡng</td>
-                <td class="output"><pre>Dựa trên thông tin bạn cung cấp, tôi sẽ đề xuất một kế hoạch dinh dưỡng phù hợp để hỗ trợ giảm cân và tăng hiệu suất chạy marathon:
-
-SÁNG (Bữa ăn chính):
-- 2 quả trứng luộc
-- 1/2 quả bơ
-- Rau spinach xào
-- 1 miếng ức gà nướng
-- Nước lọc hoặc trà xanh không đường
-
-GIỮA SÁNG:
-- 1 nắm hạnh nhân 
-- 1 quả táo nhỏ
-
-TRƯA:
-- Salad cá hồi nướng
-- Rau xanh mixed
-- Dầu oliu
-- 1/4 cup hạt quinoa
-
-CHIỀU:
-- Smoothie protein 
-- Bột protein whey
-- Rau xanh
-- Ít quả việt quất
-
-TỐI:
-- Ức gà áp chảo
-- Súp rau củ
-- Măng tây luộc
-
-LƯU Ý:
-- Uống 2-3 lít nước/ngày
-- Bổ sung muối và khoáng chất
-- Cân bằng dinh dưỡng
-
-CHÚ Ý:
-- Giảm từ từ 500-700 calo/ngày
-- Tập luyện điều độ
-- Theo dõi cơ thể</pre></td>
-                <td class="score-col"><span class="score score-medium">6</span></td>
-                <td class="reasoning">Giải pháp có định hướng tốt nhưng chưa đầy đủ chi tiết về nhu cầu dinh dưỡng cụ thể của vận động viên. Cần bổ sung phân tích chính xác về năng lượng và chất dinh dưỡng.</td>
-            </tr>
-        
-            <tr>
-                <td>{'id': 3, 'name': 'Vận động viên thể hình vegan cơ bắp', 'description': 'Test kế hoạch dinh dưỡng cho vận động viên thể hình không sử dụng sản phẩm động vật', 'input_scenario': {'height': '175', 'weight': '80', 'goal': 'Tăng khối lượng cơ bắp', 'restriction': 'Chế độ ăn thuần chay'}, 'focus_points': ['Đảm bảo đủ protein từ nguồn thực vật', 'Tối ưu hóa nạp năng lượng cho tập luyện', 'Cung cấp năng lượng và dưỡng chất cho phát triển cơ bắp']}</td>
-                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 80<br><strong>goal:</strong> Tăng khối lượng cơ bắp<br><strong>restriction:</strong> Chế độ ăn thuần chay</td>
-                <td class="criteria">• Cung cấp tối thiểu 2g protein/kg trọng cơ thể từ nguồn thực vật<br>• Tổng năng lượng nạp vào phải đáp ứng 500-700 calo so với mức chuyển hóa cơ bản<br>• Đảm bảo có 5-6 bữa ăn/ngày để duy trì năng lượng<br>• Bao gồm các nguồn protein thực vật như đậu, quinoa, tempeh<br>• Cung cấp đủ carbohydrate phức hợp để hỗ trợ tập luyện<br>• Bổ sung vitamin B12 và sắt từ các nguồn thực vật<br>• Tối thiểu 30% năng lượng từ protein thực vật</td>
-                <td class="output"><pre>Dựa trên thông tin bạn cung cấp, đây là kế hoạch dinh dưỡng cho một ngày thuần chay nhằm hỗ trợ tăng cơ bắp:
-
-SÁNG (Bữa ăn sáng giàu protein):
-- Bát yến mạch đậm đặc với:
-  + 100g yến mạch nguyên hạt
-  + 30g bột đạm đậu nành/protein thực vật
-  + Quả việt quất, hạnh nhân
-  + Sữa hạt điều không đường
-
-GIỮA SÁNG:
+GIỮA SÁNG (Bữa 2 - 10h):
 - Smoothie protein:
-  + Chuối
-  + Bột protein đậu nành
-  + Bơ hạt điều
-  + Rau bina
+  + Bột protein không lactose
+  + Quả việt quất
+  + Bơ hạnh nhân
+  + Nước dừa
 
-TRƯA (Bữa chính):
-- Đậu đen rang
+TRƯA (Bữa 3 - 12h30):
+- 200g cá hồi nướng
+- Salad rau xanh
 - Quinoa
-- Đậu phụ áp chảo
-- Rau xanh và dưa chua
-- Sốt tahini
+- 1/2 quả bơ
+- Dầu olive
 
-CHIỀU:
-- Bánh mì mè nguyên cám
-- Hummus
-- Các loại hạt dinh dưỡng
+CHIỀU (Bữa 4 - 15h):
+- Thanh protein không gluten
+- Hạt điều
+- Táo
 
-TỐI:
-- Đậu Tempeh nướng
-- Gạo lứt
-- Salad rau cải
-- Nước sốt protein thực vật
+TỐI (Bữa 5 - 18h):
+- 250g thịt bò nạc
+- Khoai lang
+- Rau xanh hấp
+- Nước ép rau củ
 
-TRƯỚC KHI NGỦ:
-- Sinh tố protein
+ĐÊM (Bữa 6 - 21h):
+- Protein shake không lactose
+- Trứng gà luộc
 - Hạnh nhân
 
 CHÚ Ý:
-- Bổ sung B12
-- Uống đủ nước
-- Kiểm tra lượng protein
+- Tổng lượng protein: ~250g/ngày
+- Calo: ~3500-4000 kcal
+- Uống 3-4 lít nước/ngày
+- Bổ sung thực phẩm không gluten, không lactose
 
-Tổng protein/ngày: ~120-140g
-Năng lượng: ~2800-3000 Kcal</pre></td>
+Lời khuyên:
+- Kiểm tra kỹ nhãn sản phẩm
+- Tham khảo ý kiến chuyên gia dinh dưỡng
+- Điều chỉnh theo đáp ứng cơ thể</pre></td>
                 <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">Giải pháp đáp ứng khá tốt các yêu cầu dinh dưỡng cho vận động viên thuần chay, với kế hoạch ăn uống đa dạng và cân đối. Tuy nhiên, cần chi tiết hóa về lượng chất dinh dưỡng và chiến lược bổ sung vitamin.</td>
+                <td class="reasoning">Giải pháp đáp ứng tốt yêu cầu về protein, năng lượng và hạn chế dinh dưỡng. Tuy nhiên, cần chi tiết hóa về cân đối dinh dưỡng và vi chất để đảm bảo phát triển cơ bắp toàn diện.</td>
+            </tr>
+        
+            <tr>
+                <td>{'id': 2, 'name': 'Vận động viên Ultra Marathon siêu mỏng', 'description': 'Test khả năng tạo kế hoạch ăn uống cho vận động viên chạy đường siêu dài với cơ thể rất gầy và mục tiêu tăng sức bền', 'testInput': {'height': '175', 'weight': '55', 'goal': 'Tăng sức chịu đựng và năng lượng', 'restriction': 'Chế độ ăn thực vật'}, 'challengeAspects': ['Cung cấp năng lượng liên tục', 'Đảm bảo protein từ nguồn thực vật', 'Hỗ trợ phục hồi cơ bắp']}</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 55<br><strong>goal:</strong> Tăng sức chịu đựng và năng lượng cho Ultra Marathon<br><strong>restriction:</strong> Chế độ ăn thực vật</td>
+                <td class="criteria">• Cung cấp tối thiểu 3000-3500 calories/ngày cho vận động viên<br>• Đảm bảo tỷ lệ protein thực vật từ 1.6-2.0g/kg trọng cơ thể<br>• Chứa đầy đủ carbohydrate phức để duy trì năng lượng liên tục<br>• Bao gồm nguồn protein thực vật đa dạng: đậu, quinoa, tempeh<br>• Cân bằng vi chất dinh dưỡng: sắt, vitamin B12, omega-3 từ thực vật<br>• Hỗ trợ phục hồi cơ bắp với thực phẩm giàu protein và chống viêm<br>• Tối ưu hóa chế độ ăn phù hợp với cơ thể siêu mỏng của vận động viên</td>
+                <td class="output"><pre>Dựa trên thông tin bạn cung cấp, dưới đây là kế hoạch bữa ăn 1 ngày phù hợp cho vận động viên Ultra Marathon chế độ ăn thực vật:
+
+SÁNG (Bữa ăn năng lượng):
+- Bát yến mạch đầy đủ:
+  • Yến mạch nguyên hạt
+  • Hạtchia
+  • Quả việt quất 
+  • Hạnh nhân
+  • Mật ong hữu cơ
+- Sinh tố protein: Protein đậu nành + Chuối
+
+GIỮA SÁNG:
+- Bánh mì nguyên hạt
+- Bơ hạnh nhân
+- Quả táo
+
+TRƯA (Bữa ăn phục hồi):
+- Salad quinoa
+- Đậu đen
+- Rau xanh đa dạng
+- Dầu ô liu
+- Hạt điều rang
+
+CHIỀU:
+- Smoothie năng lượng:
+  • Protein thực vật
+  • Dừa
+  • Chuối
+  • Bơ
+
+TỐI:
+- Đậu phụ xào
+- Gạo lứt
+- Rau xanh
+- Nước dừa
+
+Lượng nước: 3-4 lít/ngày
+
+Tổng năng lượng: 2800-3000 Kcal
+
+Lưu ý:
+- Bổ sung B12
+- Đa dạng protein thực vật
+- Theo dõi cơ thể</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">Giải pháp có nền tảng tốt cho chế độ ăn thực vật của vận động viên Ultra Marathon, nhưng cần tinh chỉnh về lượng calo và chi tiết dinh dưỡng. Các bữa ăn đa dạng và có chiến lược, nhưng chưa đáp ứng hoàn toàn nhu cầu năng lượng và protein cao của vận động viên.</td>
+            </tr>
+        
+            <tr>
+                <td>{'id': 3, 'name': 'Vận động viên Powerlifting cân nặng nặng', 'description': 'Test khả năng lập kế hoạch dinh dưỡng cho vận động viên hạng nặng với mục tiêu tăng sức mạnh và hạn chế về tim mạch', 'testInput': {'height': '195', 'weight': '130', 'goal': 'Tăng sức mạnh tối đa', 'restriction': 'Hạn chế cholesterol, phù hợp với sức khỏe tim mạch'}, 'challengeAspects': ['Quản lý năng lượng cao', 'Kiểm soát chất béo', 'Cân bằng dinh dưỡng cho cơ bắp']}</td>
+                <td class="prompt-inputs"><strong>height:</strong> 195<br><strong>weight:</strong> 130<br><strong>goal:</strong> Tăng sức mạnh tối đa<br><strong>restriction:</strong> Hạn chế cholesterol, phù hợp với sức khỏe tim mạch</td>
+                <td class="criteria">• Cung cấp tổng năng lượng phù hợp với nhu cầu của vận động viên powerlifting (khoảng 4000-4500 calories)<br>• Đảm bảo tỷ lệ protein cao (2.2-2.5g/kg trọng cơ thể) để hỗ trợ phát triển cơ bắp<br>• Kiểm soát chất béo dưới 30% tổng năng lượng nạp vào<br>• Ưu tiên protein từ các nguồn lean như gà tây, cá, trứng<br>• Bổ sung carbohydrate phức hợp để duy trì năng lượng<br>• Giảm thiểu thực phẩm chế biến sẵn và chất béo bão hòa<br>• Tích hợp thực phẩm giàu omega-3 để hỗ trợ sức khỏe tim mạch</td>
+                <td class="output"><pre>Dựa trên thông tin về chiều cao, cân nặng, mục tiêu và hạn chế chế độ ăn, dưới đây là kế hoạch bữa ăn 1 ngày:
+
+TỔNG NĂNG LƯỢNG: Khoảng 3500-4000 Calories
+Protein: 250-300g
+Carbs: 350-400g
+Chất béo: 80-100g
+
+SÁNG (750 Calories):
+- 5 trứng gà (2 lòng đỏ)
+- 100g yến mạch
+- 1 miếng ức gà nướng
+- 1 quả chuối
+- 1 ly sữa protein whey
+
+GIỮA SÁNG (350 Calories):
+- Smoothie protein:
+  + Sữa không béo
+  + Bột protein
+  + Quả việt quất
+  + Hạnh nhân
+
+TRƯA (900 Calories):
+- 200g cá hồi nướng
+- Quinoa
+- Rau xanh hấp
+- 1/2 quả bơ
+- Salad rau
+
+CHIỀU (500 Calories):
+- Bánh mì đen
+- Phô mai cottage
+- Hạt điều
+- Táo
+
+TỐI (700 Calories):
+- Thịt gà tây
+- Khoai lang
+- Rau xanh
+- Protein shake
+
+ĐÊM (200 Calories):
+- Sữa chua Hy Lạp
+- Hạt hạnh nhân
+
+LƯU Ý:
+- Ưu tiên protein tinh khiết
+- Chọn thực phẩm ít cholesterol
+- Uống nhiều nước
+- Bổ sung omega-3
+
+KHUYẾN NGHỊ:
+- Tham vấn chuyên gia dinh dưỡng
+- Kiểm tra sức khỏe định kỳ</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">Giải pháp có nỗ lực xây dựng kế hoạch dinh dưỡng nhưng chưa hoàn toàn đáp ứng các tiêu chí cho vận động viên powerlifting. Cần điều chỉnh lượng protein, kiểm soát chất béo và cung cấp thêm chi tiết về chất lượng dinh dưỡng.</td>
             </tr>
         
             </tbody>
